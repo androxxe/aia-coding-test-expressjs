@@ -21,5 +21,5 @@ app.use('/', router);
 
 app.use('/.netlify/functions/server-production', router);  // path must route to lambda
 
-// module.exports = app;
+module.exports = app;
 module.exports.handler = serverless(app);

@@ -5,7 +5,8 @@
   "scripts": {
     "lambda-serve": "./node_modules/.bin/netlify-lambda serve src",
     "lambda-build": "./node_modules/.bin/netlify-lambda build src",
-    "start": "node server-local.js"
+    "start": "node server-local.js",
+    "test": "mocha tests/*.js --exit"
   },
   "keywords": [
     "netlify",
@@ -25,5 +26,10 @@
     "morgan": "~1.9.1",
     "netlify-lambda": "^2.0.15",
     "serverless-http": "^3.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.2.2"
   }
 }
